@@ -1,3 +1,5 @@
 <div>
-    {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
+    {{ $name }}
+    {{ $email }}
+    <button wire:click="changName">Chang Name</button>
 </div>
