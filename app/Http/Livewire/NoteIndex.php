@@ -17,7 +17,7 @@ class NoteIndex extends Component
 
     public function noteCreated()
     {
-
+        session()->flash('message', '留言创建成功');
     }
 
 //    public function mount()

@@ -16,6 +16,9 @@ class NoteCreate extends Component
 
     public function createNote()
     {
+        $this->validate([
+            'body' => 'required|min:6'
+        ]);
         if (Auth::check()) {
             Auth::user()->notes()->create([
                 'body' => $this->body,
