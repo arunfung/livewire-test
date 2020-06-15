@@ -4,4 +4,5 @@
         <livewire:note-single :note="$note" :key="$note->id" />
         <br>
     @endforeach
+    {{ $notes->links() }}
 </div>
