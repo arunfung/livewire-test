@@ -9,11 +9,13 @@ class NoteList extends Component
 {
     public $name;
     public $email;
+    public $message;
 
     public function mount($name,$email)
     {
         $this->name = $name;
         $this->email = $email;
+        $this->message = 'hhhhhhhhh';
     }
 
     public function render()
